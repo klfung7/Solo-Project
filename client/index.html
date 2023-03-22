@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Corinthia:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Italianno&family=Yatra+One&display=swap');
+        /* font-family: 'Birthstone', cursive;
+        font-family: 'Corinthia', cursive;
+        font-family: 'Gentium Book Basic', serif;
+        font-family: 'Great Vibes', cursive;
+        font-family: 'Italianno', cursive;
+        font-family: 'Yatra One', cursive; */
+
+        body {
+            height: 100vh;
+            background: rgb(37,5,80);
+            background: linear-gradient(0deg, rgba(37,5,80,1) 0%, rgb(8, 29, 137) 100%);
+            color: rgb(219, 219, 219);
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 6rem;
+            font-family: 'Birthstone', cursive;
+            margin-top: 2rem;
+        }
+        /* h4 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin: 5% auto;
+            font-family: 'Gentium Book Basic', serif;
+        } */
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin: 10% auto;
+            width: 350px;
+            font-family: 'Gentium Book Basic', serif;
+            /* border: solid 1px blue; */
+        }
+        .links {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-evenly;
+            width: 800px;
+            /* border: solid 1px red; */
+        }
+        a {
+            color: rgb(219, 219, 219);
+            font-size: 1.3rem;
+        }
+        .summary {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-evenly;
+            /* border: solid 1px red; */
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+<div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Schau-Fung Wedding Page</title>
+        <h1>Krystal & Thaddeus</h1>
+        <!-- <div class="links">
+            <a href="">Home</a>
+            <a href="">Our Story</a>
+            <a href="">Photos</a>
+            <a href="">Hotels</a>
+            <a href="">RSVP</a>
+            <a href="">Registry</a>
+        </div> -->
+    </head>
+    <body>
+        <div id="root"></div>
+        <!-- <script src="/index.js" type="text/javascript"></script> -->
+        <div class="summary">
+            <h3>SEPTEMBER 30, 2023</h3>
+            <h3>PITTSBURGH, PENNSYLVANIA</h3>
+        </div>
+        
+        <div class="details">
+            <h2>WEDDING DAY</h2>
+            <p>Ceremony: 2:00pm
+                Saint Paul Cathedral
+                108 North Dithridge Street
+                Pittsburgh, PA 15213
+            </p>
+            <p>Reception: 4:30pm
+                The Rivers Club
+                301 Grant Street, One Oxford Centre
+                Pittsburgh, PA 15219
+            </p>
+        </div>
+        
+    </body>
+</div>
+    <script src="./client/index.js" type="text/babel"></script>
+</html>
