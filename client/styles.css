@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Corinthia:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Italianno&family=Yatra+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Corinthia:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Italianno&family=Yatra+One&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Yatra+One&display=swap'); */
 /* font-family: 'Birthstone', cursive;
 font-family: 'Corinthia', cursive;
@@ -8,7 +8,8 @@ font-family: 'Italianno', cursive;
 font-family: 'Yatra One', cursive; */
 
 
-html {
+
+/* html {
     background: rgb(37,5,80);
     background: linear-gradient(0deg, rgba(37,5,80,1) 0%, rgb(8, 29, 137) 100%);
     color: rgb(219, 219, 219);
@@ -47,9 +48,13 @@ h3 {
     justify-content: space-evenly;
     width: 800px;
     /* border: solid 1px red; */
-}
+/* } */
 
-a {
+/* a {
     color: rgb(219, 219, 219);
     font-size: 1.3rem;
+} */
+
+head {
+    background-color: #9e019e;
 }
