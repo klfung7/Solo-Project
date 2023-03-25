@@ -5,20 +5,16 @@ function CreateUser() {
   const [formInput, setFormInput] = useState(' ');
 
   function handleSubmit(e) {
-    // Prevent the browser from reloading the page
     e.preventDefault();
     const array = formInput.split(' ');
-    const firstName = array[0];
-    const lastName = array[1];
-    console.log(firstName, lastName);
-    const user = {firstName: firstName, lastName: lastName, RSVP: 'TBD'};
+    const firstName = array[1];
+    const lastName = array[2];
 
-    // You can pass formData as a fetch body directly:
-    fetch('http://localhost:3000/create', { 
+    fetch(`http://localhost:3000/api/create/${firstName}/${lastName}`, { 
       method: 'POST', 
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'Application/JSON' },
       mode: 'no-cors',
-      body: JSON.stringify(user) 
+      body: {} 
     })
     .then(data => data.json())
     .then(data => {
@@ -27,18 +23,14 @@ function CreateUser() {
     .catch(err => console.log('Error: ', err));
   }
 
+   
+  
+
   return (
     <form method='post' onSubmit={handleSubmit}>
     <div>
       <div style={{width: 195, height: 20, borderRadius: 3, margin: 5, backgroundColor: 'mediumslateblue', padding: 10, fontSize: '1.2rem'}}> Create New Guest Entry: </div>
-      <br />
-      {/* <label for="firstName" style={{width: 50, margin: 5}}> First Name: </label>
-      <input type="text" style={{width: 170, height: 20, borderRadius: 3, margin: 5}} required/>
-      <br />
-      <label for="lastName" style={{margin: 6}}> Last Name: </label>
-      <input type="text" style={{width: 170, height: 20, borderRadius: 3, margin: 5}} required/>
-      <br /> */}
-      
+      <br />      
       <label style={{width: 250, height: 20, borderRadius: 3, margin: 10, fontSize: '1.2rem'}}>
         Full name: <input type='text' name='fullName' value={formInput} 
         onChange={e => { setFormInput(e.target.value) }}  

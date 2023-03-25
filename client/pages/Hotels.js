@@ -4,7 +4,7 @@ import React from 'react';
 function Hotels() {
   return (
     <div >
-      <h2 style={{color: 'magenta'}}>Hotels</h2>
+      <h1 id='pages' style={{color: 'magenta'}}>Hotels</h1>
       <a style={{color: 'mediumslateblue'}} href='https://www.omnihotels.com/hotels/pittsburgh-william-penn/weddings/fung-schau-wedding-block-09252023'>Omni William Penn Hotel</a>
       <br />
       <br />

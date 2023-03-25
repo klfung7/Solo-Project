@@ -8,6 +8,7 @@ import Registry from './pages/Registry';
 import RSVP from './pages/RSVP';
 import Navbar from './pages/NavBar.jsx';
 import CreateUser from './pages/Create.jsx';
+import GuestList from './pages/GuestList.jsx';
 
 function App() {
   return (
@@ -18,10 +19,11 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path="/hotels" element={<Hotels />}/>
         <Route path="/ourStory" element={<OurStory />}/>
+        <Route path="/create" element={<CreateUser />}/>
+        <Route path="/rsvp" element={<RSVP />}/>
+        <Route path="/list" element={<GuestList />}/>
         <Route path="/photos" element={<Photos />}/>
         <Route path="/registry" element={<Registry />}/>
-        <Route path="/rsvp" element={<RSVP />}/>
-        <Route path="/create" element={<CreateUser />}/>
       </Routes>
     </ BrowserRouter>
 

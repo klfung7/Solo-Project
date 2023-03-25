@@ -11,27 +11,27 @@
 
         html {
             background-size: cover;
-            height: 120%;
-            background: rgb(37,5,80);
-            background: linear-gradient(0deg, rgba(37,5,80,1) 0%, rgb(8, 29, 137) 100%);
-            overflow: scroll;
-            overflow-x: hidden;
-            overflow-y: auto;
+            min-height: 100vh;
+            background: rgb(17,167,236);
+            background: linear-gradient(143deg, rgba(17,167,236,1) 1%, rgba(6,57,126,1) 26%, rgba(6,20,101,1) 41%, rgba(2,20,91,1) 49%, rgba(7,35,116,1) 60%, rgba(9,64,128,1) 74%, rgba(5,198,237,1) 97%);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-
         body {
             color: rgb(219, 219, 219);
             font-size: 1rem;
             display: flex;
             justify-content: center;
+            /* font-family: 'Gentium Book Basic', serif; */
         }
-    
         h1 {
             display: flex;
             justify-content: center;
-            font-size: 6rem;
+            font-size: 8rem;
             font-family: 'Birthstone', cursive;
             margin-top: 1.8rem;
+            margin-bottom: -2%;
+            text-shadow: 5px 5px magenta;
         }
         h2 {
             display: flex;
@@ -44,11 +44,28 @@
         h3 {
             display: flex;
             justify-content: center;
-            font-size: 1.6rem;
-            margin: 5% auto;
-            width: 350px;
-            font-family: 'Gentium Book Basic', serif;
-            /* border: solid 1px blue; */
+            font-size: 4rem;
+            margin: 2% auto;
+            width: 500px;
+            text-shadow: 3px 3px rgb(19, 90, 172);
+            font-family: 'Birthstone', cursive;
+        }
+        #pages{
+            /* font-size: 1rem; */
+            display: flex;
+            justify-content: center;
+            font-size: 6rem;
+            font-family: 'Birthstone', cursive;
+            margin-top: 0rem;
+            margin-bottom: 0%;
+            text-shadow: none;
+        }
+        #page{
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Birthstone', cursive;
+            margin-top: 0%;
         }
         .links {
             display: grid;
@@ -61,26 +78,32 @@
             color: rgb(219, 219, 219);
             font-size: 1.3rem;
         }
-        .summary {
-            display: grid;
-            grid-auto-flow: column;
-            justify-content: space-evenly;
-            /* border: solid 1px red; */
-        }
         .details {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin-top: 5%;
+            color: rgb(250, 229, 108);
+            text-shadow: 2px 2px rgb(204, 101, 42);
             /* border: solid 1px red; */
         }
         .innerDetails{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 500px;
+            width: 550px;
+            font-size: 1.15rem;
+            margin-top: -6%;
+            color:rgb(219, 219, 219);
+            text-shadow: none;
             /* border: solid 1px purple; */
+            margin-left: 55px;
+        }
+        h4{ 
+            font-size: 1.3rem;
+            color: magenta;
+            text-shadow: none;
         }
     </style>
 
@@ -91,33 +114,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Schau-Fung Wedding Page</title>
         <h1>Krystal & Thaddeus</h1>
+        <h3>September 30, 2023</h3>
     </head>
     <body>
         <div id="root"></div>
-        <div class="summary">
-            <h3>SEPTEMBER 30, 2023</h3>
-            <h3>PITTSBURGH, PENNSYLVANIA</h3>
-        </div>
-        
+       
         <div class="details">
-            <h2>WEDDING DAY</h2>
+            <h2>Wedding Day</h2>
             <div class="innerDetails">
                 <div>
-                    <p>Ceremony: 2:00pm</p>
+                    <h4>Ceremony: 2:00pm</h4>
                     <p>Saint Paul Cathedral</p>
                     <p>108 North Dithridge Street</p>
                     <p>Pittsburgh, PA 15213</p>
                 </div>
                 <div>
-                    <p>Reception: 4:30pm</p>
+                    <h4>Reception: 4:30pm</h4>
                     <p>The Rivers Club</p>
                     <p>301 Grant Street, One Oxford Centre</p>
                     <p>Pittsburgh, PA 15219</p>
                 </div>
             </div>
         </div>
-        
+        <br />
+        <br />
+        <br />
+
     </body>
 </div>
-    <script src="./client/index.js" type="text/babel"></script>
+    <!-- <script src="./client/index.js" type="text/babel"></script> -->
 </html>

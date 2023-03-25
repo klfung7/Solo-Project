@@ -6,6 +6,7 @@ const PORT = 3000;
 const app = express();
 const rsvpController = require('./rsvpController'); 
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 mongoose.connect('mongodb+srv://klfung7:soccer7@cluster0.7a7rvdl.mongodb.net/?retryWrites=true&w=majority')
 mongoose.connection.once('open', () => {
@@ -13,26 +14,39 @@ mongoose.connection.once('open', () => {
 });
 
 app.use(express.json());
-app.use(bodyParser.urlencoded());
+app.use(express.urlencoded());
+app.use(cors());
+
 
 // create new guest entry
-app.post('/create', rsvpController.createGuest, (req, res) => {
+app.post('/api/create/:firstName/:lastName', rsvpController.createGuest, (req, res) => {
   return res.status(200).json(res.locals.guest);
 });
 
-app.patch('/find', rsvpController.findGuest, (req, res, next) => {
-  console.log(res.locals.found);
-  return res.status(200).json(res.locals.found);
+// update rsvp
+app.patch('/api/find/:firstName/:lastName/:rsvp', rsvpController.RSVPGuest, (req, res) => {
+  return res.status(200);
 })
 
-// find a guest info
-// guestRouter.get('/:name', )
+// get all guests info
+app.get('/api/list', rsvpController.getAllUsers, (req, res) => {
+  return res.status(200).json(res.locals.guests);
+})
 
-app.get('/', (req, res) => {
+app.get('/api/*', (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
-
+app.use((err, req, res, next) => {
+  const defaultErr = {
+    log: 'Express error handler caught unknown middleware error',
+    status: 500,
+    message: { err: 'An error occurred' },
+  };
+  const errorObj = Object.assign({}, defaultErr, err);
+  console.log(errorObj.log);
+  return res.status(errorObj.status).json(errorObj.message);
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
