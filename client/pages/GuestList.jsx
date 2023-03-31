@@ -14,9 +14,10 @@ function GuestList() {
 
   return (
     <div>
-      <h2 style={{color: 'magenta'}}>Guest List</h2>
+      <h1 id='pages' >Guest List</h1>
       {guestList.map((guest, index) => (
-        <div key={index} style={{color: 'rgb(219, 219, 219)', fontSize: 20}}>
+        <div key={index}>
+           {/* style={{color: 'rgb(219, 219, 219)', fontSize: 20}} */}
           <p>Name: {guest.firstName} {guest.lastName} --- RSVP: {guest.RSVP} </p>
         </div>
       ))}

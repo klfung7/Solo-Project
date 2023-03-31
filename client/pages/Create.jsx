@@ -29,16 +29,20 @@ function CreateUser() {
   return (
     <form method='post' onSubmit={handleSubmit}>
     <div>
-      <div style={{width: 195, height: 20, borderRadius: 3, margin: 5, backgroundColor: 'mediumslateblue', padding: 10, fontSize: '1.2rem'}}> Create New Guest Entry: </div>
-      <br />      
-      <label style={{width: 250, height: 20, borderRadius: 3, margin: 10, fontSize: '1.2rem'}}>
+    {/* style={{width: 195, height: 20, borderRadius: 3, margin: 5, backgroundColor: 'mediumslateblue', padding: 10, fontSize: '1.2rem'}} */}
+      <div> Create New Guest Entry: </div>
+      <br />
+      {/* style={{width: 250, height: 20, borderRadius: 3, margin: 10, fontSize: '1.2rem'}} */}
+      <label>
         Full name: <input type='text' name='fullName' value={formInput} 
         onChange={e => { setFormInput(e.target.value) }}  
-        style={{width: 250, height: 25, borderRadius: 4, margin: 10}} />
+        />
+        {/* style={{width: 250, height: 25, borderRadius: 4, margin: 10}}  */}
       </label>
 
       <br />
-      <button type='submit' className="yes" style={{width: 180, height: 30, borderRadius: 5, margin: 5, backgroundColor: '#9e019e', color: 'silver', fontSize: '1rem'}}>Submit</button>
+      {/* style={{width: 180, height: 30, borderRadius: 5, margin: 5, backgroundColor: '#9e019e', color: 'silver', fontSize: '1rem'}} */}
+      <button type='submit' >Submit</button>
       <br />
       <br />
       <br />
