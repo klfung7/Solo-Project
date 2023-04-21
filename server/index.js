@@ -5,10 +5,13 @@ const mongoose = require('mongoose');
 const PORT = 3000;
 const app = express();
 const rsvpController = require('./rsvpController'); 
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const cors = require('cors');
+const dotenv = require('dotenv').config()
+const mongo = process.env.MONGO;
 
-mongoose.connect('mongodb+srv://klfung7:soccer7@cluster0.7a7rvdl.mongodb.net/?retryWrites=true&w=majority')
+
+mongoose.connect(mongo);
 mongoose.connection.once('open', () => {
   console.log('Connected to Database');
 });

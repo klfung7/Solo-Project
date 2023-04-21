@@ -1,84 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Corinthia:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&family=Italianno&family=Yatra+One&display=swap');
-/* font-family: 'Birthstone', cursive;
-font-family: 'Corinthia', cursive;
-font-family: 'Gentium Book Basic', serif;
-font-family: 'Great Vibes', cursive;
-font-family: 'Italianno', cursive;
-font-family: 'Yatra One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Birthstone&family=Great+Vibes&display=swap');
+// font-family: 'Amiri', serif;
+// font-family: 'Birthstone', cursive;
+// font-family: 'Great Vibes', cursive;
 
 html {
-    // background-image: url('/client/Photos/DSC6274.jpg');
-    // background-image: url('/client/Photos/DSC5205.jpg');
-    // background-image: url('/client/Photos/DSC6406.jpg');
-    // background-image: url('/client/Photos/EmeraldBayIsland.jpg');
-    // background-image: url('/client/Photos/TahoeOrangeMidLakesunset.jpg');
-    // background-image: url('/client/Photos/TahoeMountains.jpg');
-    background-image: url('/client/Photos/TahoeNightscape.jpg');
-    // background-image: url('/client/Photos/wallpaper2.jpeg');
-
     background-size: cover;
     min-height: 100vh;
-    // background: rgb(17,167,236);
-    // background: linear-gradient(143deg, rgba(17,167,236,1) 1%, rgba(6,57,126,1) 26%, rgba(6,20,101,1) 41%, rgba(2,20,91,1) 49%, rgba(7,35,116,1) 60%, rgba(9,64,128,1) 74%, rgba(5,198,237,1) 97%);
     background-repeat: no-repeat;
     background-size: cover;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    // background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    // background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
 }
 main {
-    color: rgb(219, 219, 219);
+    color: #1005e3;
     font-size: 1rem;
-    // border: 3px solid rgb(19, 90,  172);
     display: flex;
     justify-content: center;
-    /* font-family: 'Gentium Book Basic', serif; */
+    font-family: 'Amiri', serif;
 }
 #title {
     display: flex;
     justify-content: center;
-    font-size: 8rem;
+    font-size: 9rem;
+    color: #1005e3;
     font-family: 'Birthstone', cursive;
-    margin-top: 0.2rem;
+    margin-top: 2.5rem;
     margin-bottom: -2%;
-    text-shadow: 5px 5px magenta;
 }
 
 h2 {
     display: flex;
     justify-content: center;
-    font-size: 4rem;
-    font-family: 'Birthstone', cursive;
-    /* margin-top: 1.8rem; */
+    font-size: 3rem;
 }
 #date {
     display: flex;
     justify-content: center;
     font-size: 4rem;
-    margin: 2% auto;
+    margin: 9% auto 0%;
     width: 500px;
-    text-shadow: 3px 3px rgb(19, 90, 172);
-    font-family: 'Birthstone', cursive;
+    font-family: 'Great Vibes', cursive;
+
 }
 #pages{
-    /* font-size: 1rem; */
+    font-size: 1rem; 
     display: flex;
     justify-content: center;
     font-size: 6rem;
     font-family: 'Birthstone', cursive;
-    margin-top: 0rem;
+    margin-top: 3rem;
     margin-bottom: 0%;
     text-shadow: none;
-    color: magenta;
+    color: #1005e3;
 }
 #page{
     display: flex;
     justify-content: center;
     font-size: 3rem;
+    margin-top: 7rem;
     font-family: 'Birthstone', cursive;
-    // margin-top: 0%;
-    color: mediumslateblue;
 }
 a {
-    color: aqua;
+    color: #3c3b3b;
     font-size: 1.3rem;
+}
+#weddingDay {
+    font-size: 3.3rem;
 }
 .details {
     display: flex;
@@ -87,26 +76,27 @@ a {
     align-items: center;
     margin-top: 2%;
     margin-bottom: 30%;
-    color: rgb(250, 229, 108);
-    text-shadow: 2px 2px rgb(204, 101, 42);
-    /* border: solid 1px red; */
+    font-family: 'Great Vibes', cursive; 
 }
 .innerDetails{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 550px;
-    font-size: 1.15rem;
-    margin-top: -6%;
-    color:rgb(219, 219, 219);
+    font-family: 'Amiri', serif;
+    width: 650px;
+    font-size: 1.3rem;
+    margin-top: -2%;
+    color: #3c3b3b;
     text-shadow: none;
-    /* border: solid 1px purple; */
-    margin-left: 55px;
+    margin-left: 100px;
+    p {
+        margin: 0;
+    }
 }
 h4{ 
-    font-size: 1.3rem;
-    color: magenta;
-    text-shadow: none;
+    font-size: 1.8rem;
+    margin: 0;
+    color: #3c3b3b;
 }
 
 #navbar {
@@ -114,6 +104,9 @@ h4{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 20px;
+    a {
+        color: #c1c1f7;
+    }
 }
 
 #photos {
@@ -123,29 +116,35 @@ h4{
 
 #hotels {
     display: flex;
-    // border: 1px solid white;
-    margin-top: 3%;
-    margin-left: 6%;
-    margin-right: 4%;
-    // background-color: navy;
+    margin: 2%;
 
     #omni {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 50%;
+        font-size: 1.2rem;
+        margin: 3%;
         h3 {
-            color: mediumslateblue;
+            display: flex;
+            color: rgb(40, 21, 146);
             font-size: 1.6rem;
+            justify-content: center;
         }
     }
 
     #joinery {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 50%;
+        font-size: 1.2rem;
+        margin: 3%;
         h3 {
-            color: mediumslateblue;
+            display: flex;
+            color: rgb(40, 21, 146);
             font-size: 1.6rem;
+            justify-content: center;
         }
     }
 }

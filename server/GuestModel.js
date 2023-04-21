@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-mongoose.connect('mongodb+srv://klfung7:soccer7@cluster0.7a7rvdl.mongodb.net/?retryWrites=true&w=majority')
+const dotenv = require('dotenv').config()
+const mongo = process.env.MONGO;
+mongoose.connect(mongo);
 
 const GuestSchema = new Schema({
   firstName: { type: String, required: true },

@@ -8,10 +8,10 @@ function Navbar() {
       <ul id='navbar'>
         <Link to="/">Home</Link>
         <Link to='/hotels'>Hotels</Link>
-        <Link to='/ourStory'>Our Story</Link>
-        <Link to='/create'>Create Guest</Link>
-        <Link to='/rsvp'>RSVP</Link>
-        <Link to='/list'>Guest List</Link>
+        {/* <Link to='/ourStory'>Our Story</Link> */}
+        {/* <Link to='/create'>Create Guest</Link> */}
+        {/* <Link to='/rsvp'>RSVP</Link> */}
+        {/* <Link to='/list'>Guest List</Link> */}
         <Link to='/photos'>Photos</Link>
         <Link to='/registry'>Registry</Link>
       </ul>
