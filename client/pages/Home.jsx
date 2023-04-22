@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
   return (
     <div>
-      <h1 id='title'>Krystal & Thaddeus</h1>
+      <h1 id='names'>Krystal & Thaddeus</h1>
       <h3 id='date'>September 30, 2023</h3>
         
       <div class="details">

@@ -5,6 +5,7 @@
 
 html {
     background-size: cover;
+    overflow-y: scroll;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,6 +13,13 @@ html {
     background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
     // background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
     // background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    @media screen and (max-width: 640px) {
+        font-size: 1rem;
+        overflow-x: hidden;
+        overflow-y: scroll;        
+        height: 100%;
+    }
 }
 main {
     color: #1005e3;
@@ -19,21 +27,40 @@ main {
     display: flex;
     justify-content: center;
     font-family: 'Amiri', serif;
+
+    @media screen and (max-width: 640px) {
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
 }
-#title {
+#names {
     display: flex;
     justify-content: center;
     font-size: 9rem;
     color: #1005e3;
+    text-shadow: 2px 2px 2px #c1c1f7;
     font-family: 'Birthstone', cursive;
     margin-top: 2.5rem;
     margin-bottom: -2%;
+
+    @media only screen and (max-width: 640px) {
+        font-size: 3.6rem;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+    }
 }
 
 h2 {
     display: flex;
     justify-content: center;
     font-size: 3rem;
+
+    @media screen and (max-width: 640px) {
+        font-size: 1.2rem;
+        overflow-x: hidden;
+    }
 }
 #date {
     display: flex;
@@ -43,6 +70,10 @@ h2 {
     width: 500px;
     font-family: 'Great Vibes', cursive;
 
+    @media screen and (max-width: 640px) {
+        font-size: 2rem;
+        overflow-x: hidden;
+    }
 }
 #pages{
     font-size: 1rem; 
@@ -54,6 +85,12 @@ h2 {
     margin-bottom: 0%;
     text-shadow: none;
     color: #1005e3;
+
+    @media screen and (max-width: 640px) {
+        font-size: 2.8rem;
+        margin-top: 1.5rem;
+        overflow-x: hidden;
+    }
 }
 #page{
     display: flex;
@@ -62,12 +99,31 @@ h2 {
     margin-top: 7rem;
     font-family: 'Birthstone', cursive;
 }
+#registry{
+    font-size: 3rem;
+
+    @media screen and (max-width: 640px) {
+        font-size: 1.5rem;
+        overflow-x: hidden;
+    }
+}
 a {
     color: #3c3b3b;
     font-size: 1.3rem;
+    
+    @media screen and (max-width: 640px) {
+        font-size: 1rem;
+        overflow-x: hidden;
+        margin: 8% auto;
+    }
 }
 #weddingDay {
     font-size: 3.3rem;
+
+    @media screen and (max-width: 640px) {
+        font-size: 1.3rem;
+        overflow-x: hidden;
+    }
 }
 .details {
     display: flex;
@@ -77,6 +133,12 @@ a {
     margin-top: 2%;
     margin-bottom: 30%;
     font-family: 'Great Vibes', cursive; 
+
+    @media screen and (max-width: 640px) {
+        font-size: 1.3rem;
+        overflow-x: hidden;
+
+    }
 }
 .innerDetails{
     display: flex;
@@ -89,14 +151,30 @@ a {
     color: #3c3b3b;
     text-shadow: none;
     margin-left: 100px;
+
     p {
         margin: 0;
+    }
+
+    @media screen and (max-width: 640px) {
+        width: 39%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.8rem;
+        overflow-x: hidden;
+        margin: 3% auto 2%;
     }
 }
 h4{ 
     font-size: 1.8rem;
     margin: 0;
     color: #3c3b3b;
+
+    @media screen and (max-width: 640px) {
+        font-size: 1.05rem;
+        margin: 3% 0 3%;
+    }
 }
 
 #navbar {
@@ -107,11 +185,42 @@ h4{
     a {
         color: #c1c1f7;
     }
+    @media screen and (max-width: 640px) {
+        width: 80%;
+        justify-content: space-between;
+        font-size: 0.5rem;
+        margin: auto;
+        overflow-x: hidden;
+        padding: 0;
+    }
 }
 
 #photos {
     display: flex;
     align-items: center;
+
+    #mich1 {
+        height:  300px; 
+        margin: 20px;
+    }
+    #mich2 {
+        height: 500px; 
+        margin: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
+        flex-wrap: wrap;
+        margin: 2%;
+
+        #mich1 {
+            width: 90%;
+            height: 90%;
+        }
+        #mich2 {
+            width: 90%;
+            height: 90%;
+        }
+    }
 }
 
 #hotels {
@@ -130,6 +239,18 @@ h4{
             color: rgb(40, 21, 146);
             font-size: 1.6rem;
             justify-content: center;
+
+            @media screen and (max-width: 640px) {
+                font-size: 1.2rem;
+                margin: auto;
+            }
+        }
+        @media screen and (max-width: 640px) {
+            font-size: 0.8rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;        
         }
     }
 
@@ -145,6 +266,24 @@ h4{
             color: rgb(40, 21, 146);
             font-size: 1.6rem;
             justify-content: center;
+
+            @media screen and (max-width: 640px) {
+                font-size: 1.2rem;
+                margin: auto;
+            }
         }
+        @media screen and (max-width: 640px) {
+            font-size: 0.8rem;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;        
+            margin-top: 7%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+        color: #3c3b3b;
     }
 }

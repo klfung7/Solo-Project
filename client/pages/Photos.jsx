@@ -7,8 +7,8 @@ function Photos() {
     <div >
       <h1 id='pages' >Photos</h1>
       <div id='photos'>
-        <img src={michigan1} style={{height: '300px', margin: '20px'}} />      
-        <img src={michigan2} style={{height: '500px', margin: '20px'}} />
+        <img src={michigan1} id='mich1'  />      
+        <img src={michigan2} id='mich2'  />
       </div>
     </div>    
   )
