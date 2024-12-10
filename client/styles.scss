@@ -8,7 +8,6 @@ html {
     overflow-y: scroll;
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
     background: hsla(217, 100%, 50%, 1);
     background: linear-gradient(180deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
     // background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
@@ -18,7 +17,7 @@ html {
         font-size: 1rem;
         overflow-x: hidden;
         overflow-y: scroll;        
-        height: 100%;
+        background-repeat: no-repeat;
     }
 }
 main {
